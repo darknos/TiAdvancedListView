@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 45;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -22,14 +22,22 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		24DD6CF91134B3F500162E58 /* TiAdvancedListViewModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DD6CF71134B3F500162E58 /* TiAdvancedListViewModule.h */; };
-		24DD6CFA1134B3F500162E58 /* TiAdvancedListViewModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* TiAdvancedListViewModule.m */; };
-		24DE9E1111C5FE74003F90F6 /* TiAdvancedListViewModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* TiAdvancedListViewModuleAssets.h */; };
-		24DE9E1211C5FE74003F90F6 /* TiAdvancedListViewModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* TiAdvancedListViewModuleAssets.m */; };
-		84967615172449F70078981C /* TiAdvancedListViewListView.h in Headers */ = {isa = PBXBuildFile; fileRef = 84967613172449F70078981C /* TiAdvancedListViewListView.h */; };
-		84967616172449F70078981C /* TiAdvancedListViewListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84967614172449F70078981C /* TiAdvancedListViewListView.m */; };
-		8496761917244A180078981C /* TiAdvancedListViewListViewProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 8496761717244A180078981C /* TiAdvancedListViewListViewProxy.h */; };
-		8496761A17244A180078981C /* TiAdvancedListViewListViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8496761817244A180078981C /* TiAdvancedListViewListViewProxy.m */; };
+		8471B03717AA85320099776D /* TiAdvancedListViewModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 8471B02F17AA85320099776D /* TiAdvancedListViewModule.h */; };
+		8471B03817AA85320099776D /* TiAdvancedListViewModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 8471B03017AA85320099776D /* TiAdvancedListViewModule.m */; };
+		8471B03917AA85320099776D /* TiAdvancedListViewModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 8471B03117AA85320099776D /* TiAdvancedListViewModuleAssets.h */; };
+		8471B03A17AA85320099776D /* TiAdvancedListViewModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 8471B03217AA85320099776D /* TiAdvancedListViewModuleAssets.m */; };
+		848C9E5D180B1560007E8F54 /* TiSelectedCellbackgroundView.h in Headers */ = {isa = PBXBuildFile; fileRef = 848C9E51180B1560007E8F54 /* TiSelectedCellbackgroundView.h */; };
+		848C9E5E180B1560007E8F54 /* TiSelectedCellbackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 848C9E52180B1560007E8F54 /* TiSelectedCellbackgroundView.m */; };
+		848C9E5F180B1560007E8F54 /* TiAdvancedListViewListItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 848C9E53180B1560007E8F54 /* TiAdvancedListViewListItem.h */; };
+		848C9E60180B1560007E8F54 /* TiAdvancedListViewListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 848C9E54180B1560007E8F54 /* TiAdvancedListViewListItem.m */; };
+		848C9E61180B1560007E8F54 /* TiAdvancedListViewListItemProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 848C9E55180B1560007E8F54 /* TiAdvancedListViewListItemProxy.h */; };
+		848C9E62180B1560007E8F54 /* TiAdvancedListViewListItemProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 848C9E56180B1560007E8F54 /* TiAdvancedListViewListItemProxy.m */; };
+		848C9E63180B1560007E8F54 /* TiAdvancedListViewListSectionProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 848C9E57180B1560007E8F54 /* TiAdvancedListViewListSectionProxy.h */; };
+		848C9E64180B1560007E8F54 /* TiAdvancedListViewListSectionProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 848C9E58180B1560007E8F54 /* TiAdvancedListViewListSectionProxy.m */; };
+		848C9E65180B1560007E8F54 /* TiAdvancedListViewListView.h in Headers */ = {isa = PBXBuildFile; fileRef = 848C9E59180B1560007E8F54 /* TiAdvancedListViewListView.h */; };
+		848C9E66180B1560007E8F54 /* TiAdvancedListViewListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 848C9E5A180B1560007E8F54 /* TiAdvancedListViewListView.m */; };
+		848C9E67180B1560007E8F54 /* TiAdvancedListViewListViewProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 848C9E5B180B1560007E8F54 /* TiAdvancedListViewListViewProxy.h */; };
+		848C9E68180B1560007E8F54 /* TiAdvancedListViewListViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 848C9E5C180B1560007E8F54 /* TiAdvancedListViewListViewProxy.m */; };
 		AA747D9F0F9514B9006C5449 /* TiAdvancedListView_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* TiAdvancedListView_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -45,15 +53,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		24DD6CF71134B3F500162E58 /* TiAdvancedListViewModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiAdvancedListViewModule.h; path = Classes/TiAdvancedListViewModule.h; sourceTree = "<group>"; };
-		24DD6CF81134B3F500162E58 /* TiAdvancedListViewModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiAdvancedListViewModule.m; path = Classes/TiAdvancedListViewModule.m; sourceTree = "<group>"; };
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
-		24DE9E0F11C5FE74003F90F6 /* TiAdvancedListViewModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiAdvancedListViewModuleAssets.h; path = Classes/TiAdvancedListViewModuleAssets.h; sourceTree = "<group>"; };
-		24DE9E1011C5FE74003F90F6 /* TiAdvancedListViewModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiAdvancedListViewModuleAssets.m; path = Classes/TiAdvancedListViewModuleAssets.m; sourceTree = "<group>"; };
-		84967613172449F70078981C /* TiAdvancedListViewListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiAdvancedListViewListView.h; path = Classes/TiAdvancedListViewListView.h; sourceTree = "<group>"; };
-		84967614172449F70078981C /* TiAdvancedListViewListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiAdvancedListViewListView.m; path = Classes/TiAdvancedListViewListView.m; sourceTree = "<group>"; };
-		8496761717244A180078981C /* TiAdvancedListViewListViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiAdvancedListViewListViewProxy.h; path = Classes/TiAdvancedListViewListViewProxy.h; sourceTree = "<group>"; };
-		8496761817244A180078981C /* TiAdvancedListViewListViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiAdvancedListViewListViewProxy.m; path = Classes/TiAdvancedListViewListViewProxy.m; sourceTree = "<group>"; };
+		8471B02B17AA85320099776D /* TiAdvancedListViewListView1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiAdvancedListViewListView1.h; path = Classes/TiAdvancedListViewListView1.h; sourceTree = "<group>"; };
+		8471B02C17AA85320099776D /* TiAdvancedListViewListView1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiAdvancedListViewListView1.m; path = Classes/TiAdvancedListViewListView1.m; sourceTree = "<group>"; };
+		8471B02D17AA85320099776D /* TiAdvancedListViewListViewProxy1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiAdvancedListViewListViewProxy1.h; path = Classes/TiAdvancedListViewListViewProxy1.h; sourceTree = "<group>"; };
+		8471B02E17AA85320099776D /* TiAdvancedListViewListViewProxy1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiAdvancedListViewListViewProxy1.m; path = Classes/TiAdvancedListViewListViewProxy1.m; sourceTree = "<group>"; };
+		8471B02F17AA85320099776D /* TiAdvancedListViewModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiAdvancedListViewModule.h; path = Classes/TiAdvancedListViewModule.h; sourceTree = "<group>"; };
+		8471B03017AA85320099776D /* TiAdvancedListViewModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiAdvancedListViewModule.m; path = Classes/TiAdvancedListViewModule.m; sourceTree = "<group>"; };
+		8471B03117AA85320099776D /* TiAdvancedListViewModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiAdvancedListViewModuleAssets.h; path = Classes/TiAdvancedListViewModuleAssets.h; sourceTree = "<group>"; };
+		8471B03217AA85320099776D /* TiAdvancedListViewModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiAdvancedListViewModuleAssets.m; path = Classes/TiAdvancedListViewModuleAssets.m; sourceTree = "<group>"; };
+		848C9E51180B1560007E8F54 /* TiSelectedCellbackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiSelectedCellbackgroundView.h; path = Classes/TiSelectedCellbackgroundView.h; sourceTree = "<group>"; };
+		848C9E52180B1560007E8F54 /* TiSelectedCellbackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiSelectedCellbackgroundView.m; path = Classes/TiSelectedCellbackgroundView.m; sourceTree = "<group>"; };
+		848C9E53180B1560007E8F54 /* TiAdvancedListViewListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiAdvancedListViewListItem.h; path = Classes/TiAdvancedListViewListItem.h; sourceTree = "<group>"; };
+		848C9E54180B1560007E8F54 /* TiAdvancedListViewListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiAdvancedListViewListItem.m; path = Classes/TiAdvancedListViewListItem.m; sourceTree = "<group>"; };
+		848C9E55180B1560007E8F54 /* TiAdvancedListViewListItemProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiAdvancedListViewListItemProxy.h; path = Classes/TiAdvancedListViewListItemProxy.h; sourceTree = "<group>"; };
+		848C9E56180B1560007E8F54 /* TiAdvancedListViewListItemProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiAdvancedListViewListItemProxy.m; path = Classes/TiAdvancedListViewListItemProxy.m; sourceTree = "<group>"; };
+		848C9E57180B1560007E8F54 /* TiAdvancedListViewListSectionProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiAdvancedListViewListSectionProxy.h; path = Classes/TiAdvancedListViewListSectionProxy.h; sourceTree = "<group>"; };
+		848C9E58180B1560007E8F54 /* TiAdvancedListViewListSectionProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiAdvancedListViewListSectionProxy.m; path = Classes/TiAdvancedListViewListSectionProxy.m; sourceTree = "<group>"; };
+		848C9E59180B1560007E8F54 /* TiAdvancedListViewListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiAdvancedListViewListView.h; path = Classes/TiAdvancedListViewListView.h; sourceTree = "<group>"; };
+		848C9E5A180B1560007E8F54 /* TiAdvancedListViewListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiAdvancedListViewListView.m; path = Classes/TiAdvancedListViewListView.m; sourceTree = "<group>"; };
+		848C9E5B180B1560007E8F54 /* TiAdvancedListViewListViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiAdvancedListViewListViewProxy.h; path = Classes/TiAdvancedListViewListViewProxy.h; sourceTree = "<group>"; };
+		848C9E5C180B1560007E8F54 /* TiAdvancedListViewListViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiAdvancedListViewListViewProxy.m; path = Classes/TiAdvancedListViewListViewProxy.m; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* TiAdvancedListView_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiAdvancedListView_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libTiAdvancedListView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTiAdvancedListView.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,14 +121,26 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				24DE9E0F11C5FE74003F90F6 /* TiAdvancedListViewModuleAssets.h */,
-				24DE9E1011C5FE74003F90F6 /* TiAdvancedListViewModuleAssets.m */,
-				24DD6CF71134B3F500162E58 /* TiAdvancedListViewModule.h */,
-				24DD6CF81134B3F500162E58 /* TiAdvancedListViewModule.m */,
-				84967613172449F70078981C /* TiAdvancedListViewListView.h */,
-				84967614172449F70078981C /* TiAdvancedListViewListView.m */,
-				8496761717244A180078981C /* TiAdvancedListViewListViewProxy.h */,
-				8496761817244A180078981C /* TiAdvancedListViewListViewProxy.m */,
+				848C9E51180B1560007E8F54 /* TiSelectedCellbackgroundView.h */,
+				848C9E52180B1560007E8F54 /* TiSelectedCellbackgroundView.m */,
+				848C9E53180B1560007E8F54 /* TiAdvancedListViewListItem.h */,
+				848C9E54180B1560007E8F54 /* TiAdvancedListViewListItem.m */,
+				848C9E55180B1560007E8F54 /* TiAdvancedListViewListItemProxy.h */,
+				848C9E56180B1560007E8F54 /* TiAdvancedListViewListItemProxy.m */,
+				848C9E57180B1560007E8F54 /* TiAdvancedListViewListSectionProxy.h */,
+				848C9E58180B1560007E8F54 /* TiAdvancedListViewListSectionProxy.m */,
+				848C9E59180B1560007E8F54 /* TiAdvancedListViewListView.h */,
+				848C9E5A180B1560007E8F54 /* TiAdvancedListViewListView.m */,
+				848C9E5B180B1560007E8F54 /* TiAdvancedListViewListViewProxy.h */,
+				848C9E5C180B1560007E8F54 /* TiAdvancedListViewListViewProxy.m */,
+				8471B02B17AA85320099776D /* TiAdvancedListViewListView1.h */,
+				8471B02C17AA85320099776D /* TiAdvancedListViewListView1.m */,
+				8471B02D17AA85320099776D /* TiAdvancedListViewListViewProxy1.h */,
+				8471B02E17AA85320099776D /* TiAdvancedListViewListViewProxy1.m */,
+				8471B02F17AA85320099776D /* TiAdvancedListViewModule.h */,
+				8471B03017AA85320099776D /* TiAdvancedListViewModule.m */,
+				8471B03117AA85320099776D /* TiAdvancedListViewModuleAssets.h */,
+				8471B03217AA85320099776D /* TiAdvancedListViewModuleAssets.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -129,11 +161,15 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848C9E65180B1560007E8F54 /* TiAdvancedListViewListView.h in Headers */,
+				848C9E61180B1560007E8F54 /* TiAdvancedListViewListItemProxy.h in Headers */,
 				AA747D9F0F9514B9006C5449 /* TiAdvancedListView_Prefix.pch in Headers */,
-				24DD6CF91134B3F500162E58 /* TiAdvancedListViewModule.h in Headers */,
-				24DE9E1111C5FE74003F90F6 /* TiAdvancedListViewModuleAssets.h in Headers */,
-				84967615172449F70078981C /* TiAdvancedListViewListView.h in Headers */,
-				8496761917244A180078981C /* TiAdvancedListViewListViewProxy.h in Headers */,
+				8471B03717AA85320099776D /* TiAdvancedListViewModule.h in Headers */,
+				848C9E5F180B1560007E8F54 /* TiAdvancedListViewListItem.h in Headers */,
+				848C9E63180B1560007E8F54 /* TiAdvancedListViewListSectionProxy.h in Headers */,
+				848C9E5D180B1560007E8F54 /* TiSelectedCellbackgroundView.h in Headers */,
+				848C9E67180B1560007E8F54 /* TiAdvancedListViewListViewProxy.h in Headers */,
+				8471B03917AA85320099776D /* TiAdvancedListViewModuleAssets.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,10 +199,9 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
 			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "TiAdvancedListView" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -207,10 +242,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24DD6CFA1134B3F500162E58 /* TiAdvancedListViewModule.m in Sources */,
-				24DE9E1211C5FE74003F90F6 /* TiAdvancedListViewModuleAssets.m in Sources */,
-				84967616172449F70078981C /* TiAdvancedListViewListView.m in Sources */,
-				8496761A17244A180078981C /* TiAdvancedListViewListViewProxy.m in Sources */,
+				8471B03817AA85320099776D /* TiAdvancedListViewModule.m in Sources */,
+				848C9E66180B1560007E8F54 /* TiAdvancedListViewListView.m in Sources */,
+				848C9E5E180B1560007E8F54 /* TiSelectedCellbackgroundView.m in Sources */,
+				848C9E68180B1560007E8F54 /* TiAdvancedListViewListViewProxy.m in Sources */,
+				848C9E62180B1560007E8F54 /* TiAdvancedListViewListItemProxy.m in Sources */,
+				8471B03A17AA85320099776D /* TiAdvancedListViewModuleAssets.m in Sources */,
+				848C9E60180B1560007E8F54 /* TiAdvancedListViewListItem.m in Sources */,
+				848C9E64180B1560007E8F54 /* TiAdvancedListViewListSectionProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +268,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DSTROOT = /tmp/TiAdvancedListView.dst;
@@ -251,12 +289,10 @@
 				HEADER_SEARCH_PATHS = (
 					"$(TITANIUM_BASE_SDK)",
 					"$(TITANIUM_BASE_SDK2)",
-					"\"$(TITANIUM_SDK)/iphone/include/ASI\"",
+					"$(TITANIUM_BASE_SDK)/ASI",
 				);
 				INSTALL_PATH = /usr/local/lib;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = "";
-				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
 					"-DDEBUG",
 					"-DTI_POST_1_2",
@@ -268,7 +304,6 @@
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
-				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -277,7 +312,6 @@
 			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DSTROOT = /tmp/TiAdvancedListView.dst;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_MODEL_TUNING = G5;
@@ -297,19 +331,17 @@
 				HEADER_SEARCH_PATHS = (
 					"$(TITANIUM_BASE_SDK)",
 					"$(TITANIUM_BASE_SDK2)",
-					"\"$(TITANIUM_SDK)/iphone/include/ASI\"",
+					"$(TITANIUM_BASE_SDK)/ASI",
 				);
 				INSTALL_PATH = /usr/local/lib;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				LIBRARY_SEARCH_PATHS = "";
-				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-DTI_POST_1_2";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = TiAdvancedListView;
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
-				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -336,7 +368,6 @@
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = (
 					"-DDEBUG",
 					"-DTI_POST_1_2",
@@ -373,7 +404,7 @@
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				INSTALL_PATH = /usr/local/lib;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_CFLAGS = "-DTI_POST_1_2";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = TiAdvancedListView;
@@ -400,6 +431,7 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				PRODUCT_NAME = "Build & test";
 				ZERO_LINK = NO;
 			};

@@ -2,17 +2,17 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 1.0
+version: 0.8
 apiversion: 2
-description: Advanced ListView module with scroll events and ability to stop imageLoader on scroll to increase performance
+description: My module
 author: Sergey Nosenko
 license: Commercial
-copyright: 2013 Sergey Nosenko
+copyright: 2012 Sergey Nosenko
 
 
 # these should not be edited
 name: TiAdvancedListView
 moduleid: ti.advanced.list.view
-guid: 8ac51910-3d49-436c-838d-0bba9d4e555a
+guid: 9c0b5160-65ce-4f58-bcd2-8d59788434cb
 platform: iphone
-minsdk: 3.1.0.GA
+minsdk: 2.1.0.GA
