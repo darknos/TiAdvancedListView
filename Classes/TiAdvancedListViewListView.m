@@ -10,6 +10,7 @@
 #import "TiAdvancedListViewListItem.h"
 #import "TiAdvancedListViewListItemProxy.h"
 #import "TiUILabelProxy.h"
+#import "ImageLoader.h"
 #import "TiUISearchBarProxy.h"
 
 @interface TiAdvancedListViewListView ()
@@ -96,6 +97,12 @@ static TiViewProxy * FindViewProxyWithBindIdContainingPoint(UIView *view, CGPoin
     return theProxy;
 }
 
+-(void)setStopImageLoaderOnScroll_:(id)args
+{
+    stopImageLoaderOnScroll = [TiUtils boolValue:args];
+}
+
+
 -(void)setHeaderFooter:(TiViewProxy*)theProxy isHeader:(BOOL)header
 {
     [theProxy setProxyObserver:self];
@@ -170,7 +177,7 @@ static TiViewProxy * FindViewProxyWithBindIdContainingPoint(UIView *view, CGPoin
 -(void)frameSizeChanged:(CGRect)frame bounds:(CGRect)bounds
 {
     if (![searchController isActive]) {
-        [searchViewProxy ensureSearchBarHeirarchy];
+ //       [searchViewProxy ensureSearchBarHeirarchy];
     }
     [super frameSizeChanged:frame bounds:bounds];
     
@@ -1322,7 +1329,7 @@ static TiViewProxy * FindViewProxyWithBindIdContainingPoint(UIView *view, CGPoin
 }
 
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+/*- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSIndexPath* realPath = [self pathForSearchPath:indexPath];
     
@@ -1337,6 +1344,59 @@ static TiViewProxy * FindViewProxyWithBindIdContainingPoint(UIView *view, CGPoin
     }
     return 44;
 }
+*/
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSIndexPath* realPath = [self pathForSearchPath:indexPath];
+	NSDictionary *item = [[self.proxy sectionForIndex:indexPath.section] itemAtIndex:realPath.row];
+	id propertiesValue = [item objectForKey:@"properties"];
+	NSDictionary *properties = ([propertiesValue isKindOfClass:[NSDictionary class]]) ? propertiesValue : nil;
+	id heightValue = [properties objectForKey:@"height"];
+	if (heightValue == nil) {
+		id templateId = [item objectForKey:@"template"];
+		if (templateId == nil) {
+			templateId = _defaultItemTemplate;
+		}
+		if (![templateId isKindOfClass:[NSNumber class]]) {
+			TiViewTemplate *template = [_templates objectForKey:templateId];
+			heightValue = [template.properties objectForKey:@"height"];
+		}
+	}
+	TiDimension height = _rowHeight;
+	if (heightValue != nil) {
+		height = [TiUtils dimensionValue:heightValue];
+	}
+	if (TiDimensionIsDip(height)) {
+		return height.value;
+	}
+    
+    NSString *autoSizeText = [properties objectForKey:@"autoSizeText"];
+    
+    if(autoSizeText != nil) {
+        CGFloat autoSizeMaxWidthPortrait = [[properties objectForKey:@"autoSizeMaxWidthPortrait"] floatValue];
+        CGFloat autoSizeMaxWidthLandscape = [[properties objectForKey:@"autoSizeMaxWidthLandscape"] floatValue];
+        CGFloat autoSizeMinHeight = [[properties objectForKey:@"autoSizeMinHeight"] floatValue];
+        CGFloat autoSizePadding = [[properties objectForKey:@"autoSizePadding"] floatValue];
+        CGFloat autoSizeFontSize = [[properties objectForKey:@"autoSizeFontSize"] floatValue];
+        
+        UIInterfaceOrientation interfaceOrientation = [[UIApplication sharedApplication] statusBarOrientation];
+        
+        CGFloat maxWidth = autoSizeMaxWidthPortrait;
+        
+        if(interfaceOrientation == UIInterfaceOrientationLandscapeRight || interfaceOrientation == UIInterfaceOrientationLandscapeLeft) {
+            maxWidth = autoSizeMaxWidthLandscape;
+        }
+        
+        CGSize constraint = CGSizeMake(maxWidth, 1000.0f);
+        CGSize size = [autoSizeText sizeWithFont:[UIFont systemFontOfSize:autoSizeFontSize] constrainedToSize:constraint lineBreakMode:UILineBreakModeWordWrap];
+        CGFloat newHeight = MAX(size.height, autoSizeMinHeight);
+        
+        return newHeight + autoSizePadding;
+    }
+    
+    return 44;
+}
+
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -1372,10 +1432,20 @@ static TiViewProxy * FindViewProxyWithBindIdContainingPoint(UIView *view, CGPoin
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {
     //Events - None (maybe dragstart later)
+    if (stopImageLoaderOnScroll) {
+        [[ImageLoader sharedLoader] suspend];
+    }
 }
 
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
 {
+	if (decelerate==NO)
+	{
+		// resume image loader when we're done scrolling
+        if (stopImageLoaderOnScroll) {
+            [[ImageLoader sharedLoader] resume];
+        }
+	}
     //Events - pullend (maybe dragend later)
     if (![self.proxy _hasListeners:@"pullend"]) {
         return;
@@ -1389,6 +1459,9 @@ static TiViewProxy * FindViewProxyWithBindIdContainingPoint(UIView *view, CGPoin
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
     //Events - none (maybe scrollend later)
+    if (stopImageLoaderOnScroll) {
+        [[ImageLoader sharedLoader] resume];
+    }
 }
 
 - (void)scrollViewDidScrollToTop:(UIScrollView *)scrollView
@@ -1445,7 +1518,7 @@ static TiViewProxy * FindViewProxyWithBindIdContainingPoint(UIView *view, CGPoin
     }
     //IOS7 DP3. TableView seems to be adding the searchView to
     //tableView. Bug on IOS7?
-    [searchViewProxy ensureSearchBarHeirarchy];
+//    [searchViewProxy ensureSearchBarHeirarchy];
     [_tableView reloadData];
 }
 

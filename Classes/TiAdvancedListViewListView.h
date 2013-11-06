@@ -8,7 +8,10 @@
 #import "TiUIView.h"
 #import "TiAdvancedListViewListViewProxy.h"
 
-@interface TiAdvancedListViewListView : TiUIView <UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate, UIGestureRecognizerDelegate, UISearchBarDelegate, UISearchDisplayDelegate, TiScrolling, TiProxyObserver >
+@interface TiAdvancedListViewListView : TiUIView <UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate, UIGestureRecognizerDelegate, UISearchBarDelegate, UISearchDisplayDelegate, TiScrolling, TiProxyObserver > {
+@private
+    BOOL stopImageLoaderOnScroll;
+}
 
 #pragma mark - Private APIs
 
